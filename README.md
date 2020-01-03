@@ -1,4 +1,4 @@
-# @kikobeats/cold-start
+# cold-start
 
 ![Last version](https://img.shields.io/github/tag/kikobeats/@kikobeats/cold-start.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/com/kikobeats/@kikobeats/cold-start/master.svg?style=flat-square)](https://travis-ci.com/kikobeats/@kikobeats/cold-start)
