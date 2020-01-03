@@ -16,7 +16,7 @@ A **cold start** is the first time your code has been executed in a while (5–2
 This concept has been using for some infrastructure providers, such as:
 
 - [AWS Lambda](https://mikhail.io/serverless/coldstarts/aws) shutting down λ functions after an inactivity time.
-- [Heroku Dynos](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping) go sleep after 30 minutes no web traffic period.
+- [Heroku Dynos](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping) sleeping instances after 30 minutes no web traffic activity.
 
 This library brings you this concept to be applied to any piece of software, like:
 
