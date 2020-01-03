@@ -1,10 +1,10 @@
 # cold-start
 
-![Last version](https://img.shields.io/github/tag/kikobeats/@kikobeats/cold-start.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/kikobeats/@kikobeats/cold-start/master.svg?style=flat-square)](https://travis-ci.com/kikobeats/@kikobeats/cold-start)
-[![Coverage Status](https://img.shields.io/coveralls/kikobeats/@kikobeats/cold-start.svg?style=flat-square)](https://coveralls.io/github/kikobeats/@kikobeats/cold-start)
-[![Dependency status](https://img.shields.io/david/kikobeats/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/kikobeats/@kikobeats/cold-start)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/kikobeats/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/kikobeats/@kikobeats/cold-start#info=devDependencies)
+![Last version](https://img.shields.io/github/tag/Kikobeats/cold-start.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/Kikobeats/cold-start/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/cold-start)
+[![Coverage Status](https://img.shields.io/coveralls/kikobeats/cold-start.svg?style=flat-square)](https://coveralls.io/github/kikobeats/cold-start)
+[![Dependency status](https://img.shields.io/david/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/@kikobeats/cold-start)
+[![Dev Dependencies Status](https://img.shields.io/david/dev/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/@kikobeats/cold-start#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/@kikobeats/cold-start.svg?style=flat-square)](https://www.npmjs.org/package/@kikobeats/cold-start)
 
 > Create lazy singleton functions with cold-start capabilities.
