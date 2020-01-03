@@ -2,7 +2,7 @@
   "name": "@kikobeats/cold-start",
   "description": "Create lazy singleton functions with cold-start capabilities.",
   "homepage": "https://nicedoc.io/kikobeats/@kikobeats/cold-start",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
