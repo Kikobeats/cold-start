@@ -128,7 +128,7 @@ How much idle time can be considered a cold start function is inactive and shoul
 
 ## License
 
-**@kikobeats/cold-start** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/kikobeats/@kikobeats/cold-start/blob/master/LICENSE.md) License.<br>
-Authored and maintained by [Kiko Beats](https://kikobeats.com) with help from [contributors](https://github.com/kikobeats/@kikobeats/cold-start/contributors).
+**@kikobeats/cold-start** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/kikobeats/cold-start/blob/master/LICENSE.md) License.<br>
+Authored and maintained by [Kiko Beats](https://kikobeats.com) with help from [contributors](https://github.com/kikobeats/cold-start/contributors).
 
 > [kikobeats.com](https://kikobeats.com) · GitHub [Kiko Beats](https://github.com/kikobeats) · Twitter [@kikobeats](https://twitter.com/kikobeats)

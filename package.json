@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikobeats/@kikobeats/cold-start.git"
+    "url": "git+https://github.com/kikobeats/cold-start.git"
   },
   "bugs": {
-    "url": "https://github.com/kikobeats/@kikobeats/cold-start/issues"
+    "url": "https://github.com/kikobeats/cold-start/issues"
   },
   "keywords": [
     "cold",
