@@ -13,7 +13,10 @@
 
 A **cold start** is the first time your code has been executed in a while (5–25minutes).
 
-AWS Lambda uses this approach for shutting down λ functions after an inactivity time.
+This concept has been using for some infrastructure providers, such as:
+
+- [AWS Lambda](https://mikhail.io/serverless/coldstarts/aws) shutting down λ functions after an inactivity time.
+- [Heroku Dynos](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping) go sleep after 30 minutes no web traffic period.
 
 This library brings you this concept to be applied to any piece of software, like:
 
@@ -35,12 +38,14 @@ $ npm install @kikobeats/cold-start --save
 
 ```js
 const coldStart = require('@kikobeats/cold-start')()
+const createBrowserless = require('browserless')
+const ms = require('ms')
 
 const getBrowserless = coldStart({
   // every cold start function need to have an unique name
   name: 'browserless',
   // setup lazy intialization, it should be return something to be use into succesive calls
-  start: require('browserless'),
+  start: createBrowserless,
   // setup teardown, if it's necessary
   stop: browserless => browserless.destroy(),
   // how much idle time to consider the function can be stopped.
@@ -48,14 +53,15 @@ const getBrowserless = coldStart({
 })
 
 ;(async () => {
-  // first time called, it will be initialized
+  // first call will initialize the cold start function
   await getBrowserless()
 
-  // succesive calls before `duration` time will be reuse the instance.
+  // succesive calls will reuse the instance
   await getBrowserless()
 
-  // after a 5m, the function will be destroyed
-  // first call coming will allocate it an again.
+  // If the cold start function is not being called in a time window of 5m,
+  // the cold start function will be destroyed.
+  // The first call after that will allocate it again
   await getBrowserless()
 })()
 ```
