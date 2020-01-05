@@ -3,8 +3,6 @@
 ![Last version](https://img.shields.io/github/tag/Kikobeats/cold-start.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/com/Kikobeats/cold-start/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/cold-start)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/cold-start.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/cold-start)
-[![Dependency status](https://img.shields.io/david/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/@kikobeats/cold-start)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/@kikobeats/cold-start.svg?style=flat-square)](https://david-dm.org/@kikobeats/cold-start#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/@kikobeats/cold-start.svg?style=flat-square)](https://www.npmjs.org/package/@kikobeats/cold-start)
 
 > Create lazy singleton functions with cold-start capabilities.
