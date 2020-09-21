@@ -27,7 +27,7 @@
     "start"
   ],
   "dependencies": {
-    "debug": "~4.1.1"
+    "debug": "~4.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
