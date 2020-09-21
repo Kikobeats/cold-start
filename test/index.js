@@ -8,41 +8,53 @@ const createColdStart = require('../')
 const DURATION = 50
 
 test('required arguments', async t => {
-  t.is(
-    t.throws(() => {
+  t.throws(
+    () => {
       createColdStart()()
-    }, Error).message,
-    'Need to define `start` method.'
+    },
+    {
+      instanceOf: Error,
+      message: 'Need to define `start` method.'
+    }
   )
 
-  t.is(
-    t.throws(() => {
+  t.throws(
+    () => {
       createColdStart()({
         start: 'foo'
       })
-    }, Error).message,
-    'Need to define `stop` method.'
+    },
+    {
+      instanceOf: Error,
+      message: 'Need to define `stop` method.'
+    }
   )
 
-  t.is(
-    t.throws(() => {
+  t.throws(
+    () => {
       createColdStart()({
         start: function () {},
         stop: function () {}
       })
-    }, Error).message,
-    'Need to define a `name`.'
+    },
+    {
+      instanceOf: Error,
+      message: 'Need to define a `name`.'
+    }
   )
 
-  t.is(
-    t.throws(() => {
+  t.throws(
+    () => {
       createColdStart()({
         name: 'mock',
         start: function () {},
         stop: function () {}
       })
-    }, Error).message,
-    'Need to define a `duration`.'
+    },
+    {
+      instanceOf: Error,
+      message: 'Need to define a `duration`.'
+    }
   )
 
   t.true(
@@ -70,10 +82,10 @@ test('name should be unique', async t => {
   const fn = coldStart(args)
   await fn()
 
-  t.is(
-    t.throws(() => coldStart(args), Error).message,
-    'name `mock` already used.'
-  )
+  t.throws(() => coldStart(args), {
+    instanceOf: Error,
+    message: 'name `mock` already used.'
+  })
 })
 
 test('lazy initialization', async t => {
